@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="js/vue.js"></script>
+    <script src="js/p5.js"></script>
+
+        <script src="calculator.js"></script>
+  </head>
+ <body>
+          <div id="app">
+
+            <p>Total mortage amount: $$<input type="text" id="total" value="$46,944,430,086"><button v-on:click="calculate">Calculate</button>  </p>
+            <p>Down payment: ${{ down }}</p>
+            <p>Estimated monthly payment: ${{ monthly }}</p>
+            <h3>Estimated Monthly Payment Breakdown</h3>
+            <p>Principle & Interest: ${{ interestPrinciple }}</p>
+            <p>Property tax: ${{ tax }}</p>
+            <p>HOA: ${{ hoa }} </p>
+            <p>Total Monthly: ${{ monthly }} </p>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
