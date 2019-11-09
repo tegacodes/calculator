@@ -2,3 +2,17 @@ html {
   font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
 }
+
+h1 {
+	text-transform: uppercase;
+
+}
+
+input {
+  font-size: 40px;
+}
+
+button {
+  font-size: 40px;
+  background: grey;
+}

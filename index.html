@@ -14,14 +14,14 @@
  <body>
           <div id="app">
 
-            <p>Total mortage amount: $$<input type="text" id="total" value="$46,944,430,086"><button v-on:click="calculate">Calculate</button>  </p>
+            <h1>Home price: <input type="text" id="total" value="$46,944,430,086"><button v-on:click="calculate">Calculate</button>  </h1>
             <p>Down payment: ${{ down }}</p>
             <p>Estimated monthly payment: ${{ monthly }}</p>
             <h3>Estimated Monthly Payment Breakdown</h3>
-            <p>Principle & Interest: ${{ interestPrinciple }}</p>
+            <p>Principle & Interest Monthly Repayment: ${{ interestPrinciple }}</p>
             <p>Property tax: ${{ tax }}</p>
             <p>HOA: ${{ hoa }} </p>
-            <p>Total Monthly: ${{ monthly }} </p>
+            <p>Total Monthly Payment: ${{ monthly }} </p>
         </div>
         
         <script src="index.js"></script>
