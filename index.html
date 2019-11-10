@@ -8,24 +8,35 @@
     <style> body {padding: 0; margin: 0;} </style>
     <script src="js/vue.js"></script>
     <script src="js/p5.js"></script>
-
-        <script src="calculator.js"></script>
+    <script src="calculator.js"></script>
   </head>
  <body>
-          <div id="app">
+  <div id="app">
+    <h3>Unreal Estate For Sale</h3>
+    <h1>New York Apartment</h1>
+    
 
-            <h1>Mortgage Calculator: </h1>
-            <p>Home Price: </p>
-            <p><input type="text" id="total" value="$46,944,430,086"><button v-on:click="calculate"> Calculate </button>  </p>
-            <p>Down payment: ${{ down }}</p>
-            <p>Estimated monthly payment: ${{ monthly }}</p>
-            <h3>Estimated Monthly Payment Breakdown</h3>
-            <p>Principle & Interest Monthly Repayment: ${{ interestPrinciple }}</p>
-            <p>Property tax: ${{ tax }}</p>
-            <p>HOA: ${{ hoa }} </p>
-            <p>Total Monthly Payment: ${{ monthly }} </p>
-        </div>
+
+
+      <h2>Mortgage Calculator: </h2>
+      <p>Home Price: </p>
+      <p><input type="text" id="total" value="$46,944,430,086"><button v-on:click="calculate"> Calculate </button>  </p>
+      <p>Down payment: ${{ down }}</p>
+      <p>Estimated monthly payment: ${{ monthly }}</p>
+      <div id="wrapper">
+      <div id="sketch-div">
+
+      </div>        
+        <div id="monthly">
+        <h4>Estimated Monthly Payment Breakdown</h4>
+        <p>Principle & Interest Monthly Repayment: ${{ interestPrinciple }}</p>
+        <p>Property tax: ${{ tax }}</p>
+        <p>HOA: ${{ hoa }} </p>
+        <p>Total Monthly Payment: ${{ monthly }} </p>
+      </div>
+    </div>
+    </div>
         
-        <script src="index.js"></script>
-    </body>
+    <script src="index.js"></script>
+  </body>
 </html>

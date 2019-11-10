@@ -1,12 +1,12 @@
-colors = ['red', 'blue', 'green', 'orange'];
-fontSize= 35;
+colors = ['pink', 'blue', 'green', 'orange'];
+fontSize= 45;
 let a = 0.;
 
 
 function setup() {
-	createCanvas(300,300);
-
-	
+	var canvas = createCanvas(300,300);
+	//canvas.position(10*(width/4),100);
+	canvas.parent('sketch-div');
 
 
 	
@@ -35,7 +35,7 @@ function diagram(){
 
 
 	noFill();
-	strokeWeight(60);
+	strokeWeight(80);
 	stroke(colors[0]);
 	stroke(colors[0]);
 	arc(width/2, height/2, width-80, height-80, -HALF_PI+a, 0+a);
@@ -53,8 +53,12 @@ function addText(){
 	fill(0);
 	rectMode(CENTER);
 	textSize(fontSize);
-	text("$190,907,349", width/6, height/2+fontSize/2);
+	text("$190,907,349", 15, height/2+fontSize/2);
 	textSize(fontSize/3);
-	text('MONTHLY BREAKDOWN', width/3.5, height/2+fontSize/2+20);
+	text('MONTHLY BREAKDOWN', 60, height/2+fontSize/2+20);
 
+}
+
+function windowResized() {
+  centerCanvas();
 }

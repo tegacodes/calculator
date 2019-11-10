@@ -1,18 +1,62 @@
 html {
-  font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
-  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+	font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
+	font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+	margin: 0.8em;
 }
 
 h1 {
+	text-transform: uppercase;
+	font-size: 5em;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+h3 {
+	text-transform: uppercase;
+	background-color: #032765;
+	color: white;
+}
+
+h4 {
 	text-transform: uppercase;
 
 }
 
 input {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 button {
-  font-size: 20px;
-  background: grey;
+	font-size: 20px;
+	background: grey;
+}
+
+img {
+  width: 100%;
+}
+
+#app {
+  background-image: url('assets/NYApartment-4.gif');
+  width: 100%;
+}
+
+#wrapper {
+	overflow: hidden;
+	border:0.5px solid grey;
+	width: 800px;
+	padding: 0.8em;
+}
+
+#sketch-div {
+	float: left; 
+}
+
+#monthly {
+	float: left;
+	margin: 20px;
 }
