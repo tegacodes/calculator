@@ -4,7 +4,7 @@ html {
 	margin-left: 3em;
 	margin-right: 3em;
 	background-image: url('assets/NYApartment-4.gif');
-	background-size: cover; 
+	background-size: 100%; 
 }
 
 body {
