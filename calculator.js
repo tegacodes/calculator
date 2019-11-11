@@ -1,6 +1,7 @@
 colors = ['pink', 'blue', 'green', 'orange'];
 fontSize= 45;
-let a = 0.;
+let x = 0;
+let a = 0;
 
 
 function setup() {
@@ -49,11 +50,18 @@ function diagram(){
 }
 
 function addText(){
+	if(x<190907300){
+	x=x+73983;
+	}else if (x<190907340){
+	x=x+13;
+	}else if (x<190907340){
+	x=x+1;
+	}
 	noStroke();
 	fill(0);
 	rectMode(CENTER);
 	textSize(fontSize);
-	text("$190,907,349", 15, height/2+fontSize/2);
+	text("$"+nfc(x, 0), 15, height/2+fontSize/2);
 	textSize(fontSize/3);
 	text('MONTHLY BREAKDOWN', 60, height/2+fontSize/2+20);
 
