@@ -1,7 +1,14 @@
 html {
 	font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
 	font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-	margin: 0.8em;
+	margin-left: 3em;
+	margin-right: 3em;
+	background-image: url('assets/NYApartment-4.gif');
+	background-size: cover; 
+}
+
+body {
+
 }
 
 h1 {
@@ -41,15 +48,15 @@ img {
 }
 
 #app {
-  background-image: url('assets/NYApartment-4.gif');
-  width: 100%;
+
 }
 
 #wrapper {
 	overflow: hidden;
 	border:0.5px solid grey;
-	width: 800px;
+	width: 830px;
 	padding: 0.8em;
+	background: white;
 }
 
 #sketch-div {
@@ -59,4 +66,5 @@ img {
 #monthly {
 	float: left;
 	margin: 20px;
+
 }
