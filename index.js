@@ -38,7 +38,7 @@ var app = new Vue({
       		this.interestPrinciple = Number(this.mortgage*(this.r*Math.pow((1+this.r),(this.n*this.y)))/(Math.pow((1+this.r),(this.n*this.y))));
       		console.log(this.interestPrinciple)
       		this.tax = this.price*0.0014;
-      		this.hoa = this.hoa;
+      		this.hoa = 32287410;
       		this.monthly = sum(this.tax,this.hoa,this.interestPrinciple);
       		console.log(this.monthly)
 
@@ -46,6 +46,8 @@ var app = new Vue({
       		this.monthly = formatNumber(this.monthly);
       		this.interestPrinciple = formatNumber(this.interestPrinciple);
       		this.tax = formatNumber(this.tax);
+          this.hoa = formatNumber(this.hoa);
+
     },
     resetData: function() {
 			this.price = null;

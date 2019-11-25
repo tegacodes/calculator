@@ -7,8 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style> body {padding: 0; margin: 0;} </style>
     <script src="js/vue.js"></script>
-    <script src="js/p5.js"></script>
-    <script src="calculator.js"></script>
+    <script src="js/countup.js"></script>
   </head>
  <body>
   <div id="app">
@@ -17,23 +16,30 @@
 
 
 
-      <h2>Mortgage Calculator: </h2>
+      <div id="wrapper2">    
 
-      <p>Home Price: </p>
-      <p><input type="text" id="total" value="$46,944,430,086"><button v-on:click="calculate"> Calculate </button>  </p>
-      <p>Down payment: ${{ down }}</p>
-      <p>Estimated monthly payment: ${{ monthly }}</p>
-      <div id="wrapper">
-      <div id="sketch-div">
+                <h2>Mortgage Calculator: </h2>
 
-      </div>        
-        <div id="monthly">
+
+      <p><input type="text" id="total" value="$46,944,430,086" disabled><button v-on:click="calculate"> Calculate </button>  </p>
+            
+       <img class="image" src="assets/chart.svg" alt="Smiley face" height="400" width="400">
+        <p>Down payment: ${{ down }}</p>
         <h4>Estimated Monthly Payment Breakdown</h4>
+
         <p>Principle & Interest Monthly Repayment: ${{ interestPrinciple }}</p>
         <p>Property tax: ${{ tax }}</p>
         <p>HOA: ${{ hoa }} </p>
         <p>Total Monthly Payment: ${{ monthly }} </p>
-      </div>
+    <div class="iCountUp">
+    <ICountUp
+      :delay="delay"
+      :endVal="endVal"
+      :options="options"
+      @ready="onReady"
+    />
+  </div>
+
     </div>
 
     </div>
